@@ -34,67 +34,164 @@
     <main class="max-w-6xl w-full mx-auto px-6">
       <!-- Modal -->
       <div
-        class="max-w-4xl w-full mx-auto bg-white rounded-lg shadow-xl p-6 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-6 flex-shrink-0"
+        class="max-w-4xl w-full mx-auto bg-white rounded-lg shadow-xl p-6 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-6 flex-shrink-0 relative overflow-hidden"
       >
-      <!-- Image Box -->
-      <div class="relative overflow-hidden rounded-lg shadow-md" style="padding-top: 56.25%;">
-        <div class="absolute w-full h-full top-0 left-0 bg-gray-300 flex items-center justify-center">
-            <p class="text-gray-600 text-2xl font-bold">No Image</p>
+        <!-- Image Box -->
+        <div class="grid grid-cols-1 gap-3">
+          <!-- Image -->
+          <div
+            class="relative overflow-hidden rounded-lg shadow-md"
+            style="padding-top: 56.25%;"
+          >
+            <div
+              class="absolute w-full h-full top-0 left-0 bg-gray-300 flex items-center justify-center"
+            >
+              <p class="text-gray-600 text-2xl font-bold">No Image</p>
+            </div>
+            <img
+              class="absolute top-0 left-0 object-cover h-full w-full flex-1 flex-shrink-0"
+              src=""
+              alt=""
+            />
+            <div
+              class="absolute bottom-0 right-0 m-2 p-1 bg-white rounded-full shadow-base"
+            >
+              <svg
+                class="h-8 w-8"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <rect width="40" height="40" rx="20" fill="url(#pattern0)" />
+                <defs>
+                  <pattern
+                    id="pattern0"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use xlink:href="#image0" transform="scale(0.00390625)" />
+                  </pattern>
+                  <image
+                    id="image0"
+                    width="256"
+                    height="256"
+                    xlink:href="data:image/png;base64,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"
+                  />
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <!-- Caption -->
+          <p class="flex text-sm">
+            <svg class="mr-2 w-5 h-5 text-gray-500" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13 16H12V12H11M12 8H12.01M21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="text-gray-600">Tap to Upload an Image or choose from Unsplash.</span>
+          </p>
         </div>
-        <img class="absolute top-0 left-0 object-cover h-full w-full flex-1 flex-shrink-0" src="" alt="">
-        <div class="absolute bottom-0 right-0 m-2 p-2 bg-white rounded-full shadow-md">
-            <img class="h-6 w-6" src="./images/md-pencil-alt.svg" alt="edit" />
-        </div>
-      </div>
+        <!-- Inputs & Buttons-->
         <div class="flex flex-col justify-between flex-1 pt-1">
-            <div class="w-full mb-6">
-                <!-- Input Box-->
-                <div class="relative w-full mb-6">
-                    <label
-                      for="Liabilities"
-                      class="text-sm bg-white uppercase text-gray-900 px-2 ml-3 absolute top-0 left-0 transform -translate-y-1/2"
-                      >Name</label
-                    >
-                    <input
-                      class="border-4 text-gray-900 border-gray-900 py-2 px-4 rounded-lg text-xl w-full focus:outline-none focus:shadow-outline"
-                      type="text"
-                      name="asset"
-                      id="asset"
-                      placeholder="Car, House etc"
-                    />
-                </div>
-                <!-- Input Box-->
-                <div class="relative w-full">
-                    <label
-                      for="Liabilities"
-                      class="text-sm bg-white uppercase text-gray-900 px-2 ml-3 absolute top-0 left-0 transform -translate-y-1/2"
-                      >Amount</label
-                    >
-                    <input
-                      class="border-4 text-gray-900 border-gray-900 py-2 px-4 rounded-lg text-xl w-full focus:outline-none focus:shadow-outline"
-                      type="text"
-                      name="asset"
-                      id="asset"
-                      placeholder="$000"
-                    />
-                </div>
+          <div class="w-full mb-6">
+            <!-- Input Box-->
+            <div class="relative w-full mb-6">
+              <label
+                for="Liabilities"
+                class="text-sm bg-white uppercase text-gray-900 px-2 ml-3 absolute top-0 left-0 transform -translate-y-1/2"
+                >Name</label
+              >
+              <input
+                class="border-4 text-gray-900 border-gray-900 py-2 px-4 rounded-lg text-xl w-full focus:outline-none focus:shadow-outline"
+                type="text"
+                name="asset"
+                id="asset"
+                placeholder="Car, House etc"
+              />
             </div>
+            <!-- Input Box-->
+            <div class="relative w-full">
+              <label
+                for="Liabilities"
+                class="text-sm bg-white uppercase text-gray-900 px-2 ml-3 absolute top-0 left-0 transform -translate-y-1/2"
+                >Amount</label
+              >
+              <input
+                class="border-4 text-gray-900 border-gray-900 py-2 px-4 rounded-lg text-xl w-full focus:outline-none focus:shadow-outline"
+                type="text"
+                name="asset"
+                id="asset"
+                placeholder="$000"
+              />
+            </div>
+          </div>
 
-            <!-- Buttons -->
-            <div class="w-full grid grid-cols-1 gap-3 sm:flex">
-                <button
-                class="bg-gray-900 text-white text-base md:text-xl py-2 px-6 rounded-lg focus:outline-none focus:shadow-outline"
-              >
-                Save
-              </button>
-                <button
-                class="bg-gray-300 text-gray-700 text-base md:text-xl py-2 px-6 rounded-lg focus:outline-none focus:shadow-outline"
-              >
-                Cancel
-              </button>
-            </div>
+          <!-- Buttons -->
+          <div class="w-full grid grid-cols-1 gap-3 sm:flex">
+            <button
+              class="bg-gray-900 text-white text-base md:text-xl py-3 px-6 uppercase tracking-wider rounded-lg focus:outline-none focus:shadow-outline"
+            >
+              Save
+            </button>
+            <button
+              class="bg-gray-300 text-gray-700 text-base md:text-xl py-3 px-6 uppercase tracking-wider rounded-lg focus:outline-none focus:shadow-outline"
+            >
+              Cancel
+            </button>
+          </div>
         </div>
-    </div>
+
+        <!-- Search Box -->
+        <div class="absolute w-full h-full bg-white p-6 flex flex-col md:flex-row">
+          <!-- Search Bar -->
+          <div class="w-full md:max-w-xs mb-4 md:mb-0">
+            <button class="flex items-center mb-2 text-gray-700 focus:outline-none focus:shadow-outline">
+              <svg class="h-4 w-4 mr-1" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 19L8 12L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Back</span>
+            </button>
+            <form class="w-full flex h-auto">
+              <input type="text" class="flex-1 py-3 px-4 text-gray-900 bg-gray-300 focus:outline-none focus:shadow-outline rounded-tl-md rounded-bl-md" placeholder="Seach for Images...">
+              <div class="w-12 h-12 bg-gray-900 relative flex-shrink-0 flex items-center justify-center rounded-tr-md rounded-br-md">
+                <svg class="h-6 w-6 m-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 21L15 15M17 10C17 10.9193 16.8189 11.8295 16.4672 12.6788C16.1154 13.5281 15.5998 14.2997 14.9497 14.9497C14.2997 15.5998 13.5281 16.1154 12.6788 16.4672C11.8295 16.8189 10.9193 17 10 17C9.08075 17 8.1705 16.8189 7.32122 16.4672C6.47194 16.1154 5.70026 15.5998 5.05025 14.9497C4.40024 14.2997 3.88463 13.5281 3.53284 12.6788C3.18106 11.8295 3 10.9193 3 10C3 8.14348 3.7375 6.36301 5.05025 5.05025C6.36301 3.7375 8.14348 3 10 3C11.8565 3 13.637 3.7375 14.9497 5.05025C16.2625 6.36301 17 8.14348 17 10Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <input type="submit" value="" class="w-full h-full absolute top-0 left-0 bg-gray-900  bg-opacity-0 focus:outline-none focus:shadow-outline rounded-tr-md rounded-br-md">
+              </div>
+            </form>
+          </div>
+          <!-- Images -->
+          <div class="w-full md:ml-6 flex flex-col md:grid grid-cols-2 gap-4 overflow-y-scroll">
+            <div class="w-full relative overflow-hidden rounded-md shadow-md cursor-pointer" style="padding-top: 56.25%">
+              <img src="./images/cat.jpg" alt="" class="absolute top-0 left-0 object-cover w-full h-full">
+            </div>
+            <div class="w-full relative overflow-hidden rounded-md shadow-md cursor-pointer" style="padding-top: 56.25%">
+              <img src="./images/cat.jpg" alt="" class="absolute top-0 left-0 object-cover w-full h-full">
+            </div>
+            <div class="w-full relative overflow-hidden rounded-md shadow-md cursor-pointer" style="padding-top: 56.25%">
+              <img src="./images/cat.jpg" alt="" class="absolute top-0 left-0 object-cover w-full h-full">
+            </div>
+            <div class="w-full relative overflow-hidden rounded-md shadow-md cursor-pointer" style="padding-top: 56.25%">
+              <img src="./images/cat.jpg" alt="" class="absolute top-0 left-0 object-cover w-full h-full">
+            </div>
+            <div class="w-full relative overflow-hidden rounded-md shadow-md cursor-pointer" style="padding-top: 56.25%">
+              <img src="./images/cat.jpg" alt="" class="absolute top-0 left-0 object-cover w-full h-full">
+            </div>
+            <div class="w-full relative overflow-hidden rounded-md shadow-md cursor-pointer" style="padding-top: 56.25%">
+              <img src="./images/cat.jpg" alt="" class="absolute top-0 left-0 object-cover w-full h-full">
+            </div>
+            <div class="w-full relative overflow-hidden rounded-md shadow-md cursor-pointer" style="padding-top: 56.25%">
+              <img src="./images/cat.jpg" alt="" class="absolute top-0 left-0 object-cover w-full h-full">
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
     </main>
   </body>
 </html>
