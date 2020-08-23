@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/tailwind.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body class="pattern bg-gray-200 text-gray-900">
+    <header class="w-full bg-gray-900 shadow-lg mb-6">
+      <div
+        class="max-w-screen-xl w-full mx-auto px-6 flex justify-between items-center"
+      >
+        <svg
+          class="w-24"
+          width="205"
+          height="86"
+          viewBox="0 0 205 86"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M33.336 28.176V41.808H54.968V48.848H33.336V66H25.016V21.2H57.72V28.176H33.336ZM96.1885 49.104C96.1885 49.6587 96.1458 50.448 96.0605 51.472H69.2445C69.7138 53.9893 70.9298 55.9947 72.8925 57.488C74.8978 58.9387 77.3725 59.664 80.3165 59.664C84.0712 59.664 87.1645 58.4267 89.5965 55.952L93.8845 60.88C92.3485 62.7147 90.4072 64.1013 88.0605 65.04C85.7138 65.9787 83.0685 66.448 80.1245 66.448C76.3698 66.448 73.0632 65.7013 70.2045 64.208C67.3458 62.7147 65.1272 60.6453 63.5485 58C62.0125 55.312 61.2445 52.2827 61.2445 48.912C61.2445 45.584 61.9912 42.5973 63.4845 39.952C65.0205 37.264 67.1325 35.1733 69.8205 33.68C72.5085 32.1867 75.5378 31.44 78.9085 31.44C82.2365 31.44 85.2018 32.1867 87.8045 33.68C90.4498 35.1307 92.4978 37.2 93.9485 39.888C95.4418 42.5333 96.1885 45.6053 96.1885 49.104ZM78.9085 37.84C76.3485 37.84 74.1725 38.608 72.3805 40.144C70.6312 41.6373 69.5645 43.6427 69.1805 46.16H88.5725C88.2312 43.6853 87.1858 41.68 85.4365 40.144C83.6872 38.608 81.5112 37.84 78.9085 37.84ZM123.265 31.44C127.574 31.44 131.03 32.6987 133.633 35.216C136.236 37.7333 137.537 41.4667 137.537 46.416V66H129.537V47.44C129.537 44.4533 128.833 42.2133 127.425 40.72C126.017 39.184 124.012 38.416 121.409 38.416C118.465 38.416 116.14 39.312 114.433 41.104C112.726 42.8533 111.873 45.392 111.873 48.72V66H103.873V31.824H111.489V36.24C112.812 34.6613 114.476 33.4667 116.481 32.656C118.486 31.8453 120.748 31.44 123.265 31.44Z"
+            fill="white"
+          />
+          <path
+            d="M4 82H198.013L152.21 4H4V82Z"
+            stroke="white"
+            stroke-width="8"
+          />
+          <path
+            d="M184 21L192 21L165.999 66.0001L158.001 66.0001L184 21Z"
+            fill="white"
+          />
+        </svg>
+
+        <svg
+          class="h-8 w-8 cursor-pointer"
+          width="54"
+          height="54"
+          viewBox="0 0 54 54"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M29.25 40.5H45M9 13.5H45H9ZM9 27H45H9Z"
+            stroke="white"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+    </header>
+
+    <main class="max-w-screen-xl w-full mx-auto px-6 mb-6">
+      <!-- Layout -->
+      <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- 2/3 Stuff -->
+        <div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Details -->
+          <div
+            class="md:col-span-2 bg-white rounded-lg shadow-lg p-6 grid grid-cols-1 md:grid-cols-2 gap-6 overflow-hidden"
+          >
+            <!-- Title -->
+            <div class="md:col-span-2 flex justify-between items-start -mb-3">
+              <div class="flex items-center">
+                <svg
+                  class="h-6 w-6 text-gray-500 mr-2 flex-shrink-0"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 8.99997V11M12 15H12.01M20.618 5.98397C17.4561 6.15189 14.3567 5.05858 12 2.94397C9.64327 5.05858 6.5439 6.15189 3.382 5.98397C3.12754 6.96908 2.99918 7.98252 3 8.99997C3 14.591 6.824 19.29 12 20.622C17.176 19.29 21 14.592 21 8.99997C21 7.95797 20.867 6.94797 20.618 5.98397Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p
+                  class="text-gray-700 font-semibold text-xl uppercase tracking-wide"
+                >
+                  Vault Details
+                </p>
+              </div>
+
+              <!-- Icon -->
+              <button
+                class="rounded-full bg-red-200 p-2 flex focus:outline-none focus:shadow-outline"
+              >
+                <svg
+                  class="h-5 w-5 text-red-800"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 11V17M14 11V17M4 7H20M19 7L18.133 19.142C18.0971 19.6466 17.8713 20.1188 17.5011 20.4636C17.1309 20.8083 16.6439 21 16.138 21H7.862C7.35614 21 6.86907 20.8083 6.49889 20.4636C6.1287 20.1188 5.90292 19.6466 5.867 19.142L5 7H19ZM15 7V4C15 3.73478 14.8946 3.48043 14.7071 3.29289C14.5196 3.10536 14.2652 3 14 3H10C9.73478 3 9.48043 3.10536 9.29289 3.29289C9.10536 3.48043 9 3.73478 9 4V7H15Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <!-- Image Box -->
+            <div class="grid grid-cols-1 gap-3">
+              <!-- Image -->
+              <div
+                class="relative overflow-hidden rounded-lg shadow-md"
+                style="padding-top: 56.25%;"
+              >
+                <div
+                  class="absolute w-full h-full top-0 left-0 bg-gray-300 flex items-center justify-center"
+                >
+                  <p class="text-gray-500 text-2xl font-bold">No Image</p>
+                </div>
+                <img
+                  class="absolute top-0 left-0 object-cover h-full w-full flex-1 flex-shrink-0"
+                  src=""
+                  alt=""
+                />
+                <div
+                  class="absolute bottom-0 right-0 m-2 p-1 bg-white rounded-full shadow-base"
+                >
+                  <svg
+                    class="h-8 w-8"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <rect
+                      width="40"
+                      height="40"
+                      rx="20"
+                      fill="url(#pattern0)"
+                    />
+                    <defs>
+                      <pattern
+                        id="pattern0"
+                        patternContentUnits="objectBoundingBox"
+                        width="1"
+                        height="1"
+                      >
+                        <use
+                          xlink:href="#image0"
+                          transform="scale(0.00390625)"
+                        />
+                      </pattern>
+                      <image
+                        id="image0"
+                        width="256"
+                        height="256"
+                        xlink:href="data:image/png;base64,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"
+                      />
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!-- Inputs & Buttons-->
+            <div class="flex flex-col justify-between flex-1">
+              <div class="w-full mb-6">
+                <!-- Input Box-->
+                <label for="name" class="text-sm uppercase text-gray-700 mb-1"
+                  >Name</label
+                >
+                <div class="w-full relative mb-2">
+                  <input
+                    class="border-2 text-gray-900 border-gray-400 bg-gray-200 py-2 pl-4 pr-12 rounded-lg text-lg w-full focus:outline-none focus:shadow-outline"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Car, House etc"
+                  />
+                  <button
+                    class="w-12 h-full absolute top-0 right-0 flex justify-center items-center rounded-lg focus:outline-none focus:shadow-outline"
+                  >
+                    <svg
+                      class="w-6 h-6 text-gray-700"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4 3.99999V8.99999H4.582M4.582 8.99999C5.24585 7.35812 6.43568 5.9829 7.96503 5.08985C9.49438 4.1968 11.2768 3.8364 13.033 4.06513C14.7891 4.29386 16.4198 5.09878 17.6694 6.35377C18.919 7.60875 19.7168 9.24285 19.938 11M4.582 8.99999H9M20 20V15H19.419M19.419 15C18.7542 16.6409 17.564 18.015 16.0348 18.9073C14.5056 19.7995 12.7237 20.1595 10.9681 19.9309C9.21246 19.7022 7.5822 18.8979 6.33253 17.6437C5.08287 16.3896 4.28435 14.7564 4.062 13M19.419 15H15"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <!-- Input Box-->
+                <label for="Amount" class="text-sm uppercase text-gray-700 mb-1"
+                  >Amount</label
+                >
+                <div class="relative w-full">
+                  <input
+                    class="border-2 text-gray-900 border-gray-400 bg-gray-200 py-2 px-4 rounded-lg text-lg w-full focus:outline-none focus:shadow-outline"
+                    type="text"
+                    name="Amount"
+                    id="Amount"
+                    placeholder="$000"
+                  />
+                  <button
+                    class="w-12 h-full absolute top-0 right-0 flex justify-center items-center rounded-lg focus:outline-none focus:shadow-outline"
+                  >
+                    <svg
+                      class="w-6 h-6 text-gray-700"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4 3.99999V8.99999H4.582M4.582 8.99999C5.24585 7.35812 6.43568 5.9829 7.96503 5.08985C9.49438 4.1968 11.2768 3.8364 13.033 4.06513C14.7891 4.29386 16.4198 5.09878 17.6694 6.35377C18.919 7.60875 19.7168 9.24285 19.938 11M4.582 8.99999H9M20 20V15H19.419M19.419 15C18.7542 16.6409 17.564 18.015 16.0348 18.9073C14.5056 19.7995 12.7237 20.1595 10.9681 19.9309C9.21246 19.7022 7.5822 18.8979 6.33253 17.6437C5.08287 16.3896 4.28435 14.7564 4.062 13M19.419 15H15"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Buttons -->
+              <div class="w-full grid sm:flex">
+                <button
+                  class="text-gray-900 text-base font-semibold py-2 px-6 uppercase tracking-wider rounded-lg focus:outline-none focus:shadow-outline border-2 border-gray-900"
+                >
+                  Save Changes
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Goals -->
+          <div
+            class="bg-white grid grid-cols-1 gap-3 rounded-lg shadow-lg p-6 relative overflow-hidden"
+          >
+            <!-- Title -->
+            <div class="flex justify-between items-start">
+              <div class="flex items-center">
+                <svg
+                  class="h-6 w-6 text-gray-500 mr-2 flex-shrink-0"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17 9V7C17 6.46957 16.7893 5.96086 16.4142 5.58579C16.0391 5.21071 15.5304 5 15 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V13C3 13.5304 3.21071 14.0391 3.58579 14.4142C3.96086 14.7893 4.46957 15 5 15H7M9 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V11C21 10.4696 20.7893 9.96086 20.4142 9.58579C20.0391 9.21071 19.5304 9 19 9H9C8.46957 9 7.96086 9.21071 7.58579 9.58579C7.21071 9.96086 7 10.4696 7 11V17C7 17.5304 7.21071 18.0391 7.58579 18.4142C7.96086 18.7893 8.46957 19 9 19ZM16 14C16 14.5304 15.7893 15.0391 15.4142 15.4142C15.0391 15.7893 14.5304 16 14 16C13.4696 16 12.9609 15.7893 12.5858 15.4142C12.2107 15.0391 12 14.5304 12 14C12 13.4696 12.2107 12.9609 12.5858 12.5858C12.9609 12.2107 13.4696 12 14 12C14.5304 12 15.0391 12.2107 15.4142 12.5858C15.7893 12.9609 16 13.4696 16 14Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <p
+                  class="text-gray-700 font-semibold text-xl uppercase tracking-wide"
+                >
+                  Set a Goal
+                </p>
+              </div>
+
+              <!-- Icon -->
+              <button
+                class="rounded-full bg-gray-300 p-2 flex focus:outline-none focus:shadow-outline"
+              >
+                <svg
+                  class="h-5 w-5 text-gray-700"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4 3.99999V8.99999H4.582M4.582 8.99999C5.24585 7.35812 6.43568 5.9829 7.96503 5.08985C9.49438 4.1968 11.2768 3.8364 13.033 4.06513C14.7891 4.29386 16.4198 5.09878 17.6694 6.35377C18.919 7.60875 19.7168 9.24285 19.938 11M4.582 8.99999H9M20 20V15H19.419M19.419 15C18.7542 16.6409 17.564 18.015 16.0348 18.9073C14.5056 19.7995 12.7237 20.1595 10.9681 19.9309C9.21246 19.7022 7.5822 18.8979 6.33253 17.6437C5.08287 16.3896 4.28435 14.7564 4.062 13M19.419 15H15"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div class="bg-gray-200 w-full h-12"></div>
+            <div class="bg-gray-200 w-full h-12"></div>
+          </div>
+          <!-- Contribute -->
+          <div
+            class="bg-white grid grid-cols-1 gap-3 rounded-lg shadow-lg p-6 relative overflow-hidden"
+          >
+            <!-- Title -->
+            <div class="flex justify-between items-start">
+              <div class="flex items-center">
+                <svg
+                  class="h-6 w-6 text-gray-500 mr-2 flex-shrink-0"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 8C10.343 8 9 8.895 9 10C9 11.105 10.343 12 12 12C13.657 12 15 12.895 15 14C15 15.105 13.657 16 12 16M12 8V16M12 8C13.11 8 14.08 8.402 14.599 9M12 8V7M12 16V17M12 16C10.89 16 9.92 15.598 9.401 15M21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <p
+                  class="text-gray-700 font-semibold text-xl uppercase tracking-wide"
+                >
+                  Contribute
+                </p>
+              </div>
+            </div>
+
+            <input
+              class="border-2 text-gray-900 border-gray-400 bg-gray-200 py-2 px-4 rounded-lg text-lg w-full focus:outline-none focus:shadow-outline"
+              type="text"
+              name="Amount"
+              id="Amount"
+              placeholder="$000"
+            />
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <button
+                class="text-white text-base font-semibold p-2 uppercase tracking-wider rounded-lg focus:outline-none focus:shadow-outline bg-gray-900 hover:bg-gray-800"
+              >
+                Deposit
+              </button>
+              <button
+                class="text-gray-900 text-base font-semibold p-2 uppercase tracking-wider rounded-lg focus:outline-none focus:shadow-outline border-2 border-gray-900"
+              >
+                Withdraw
+              </button>
+            </div>
+          </div>
+          <!-- Progress -->
+          <div
+            class="md:col-span-2 bg-white rounded-lg shadow-lg p-6 grid grid-cols-1 md:grid-cols-2 gap-6 overflow-hidden"
+          >
+            <!-- Title -->
+            <div class="md:col-span-2 flex justify-between items-start">
+              <div class="flex items-center">
+                <svg
+                  class="h-6 w-6 text-gray-500 mr-2 flex-shrink-0"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.39241 4.95923C7.71833 3.90331 9.31546 3.24325 11 3.05499V13H20.945C20.7567 14.6845 20.0966 16.2816 19.0407 17.6076C17.9848 18.9335 16.576 19.9343 14.9763 20.4949C13.3767 21.0554 11.6513 21.1529 9.99874 20.7761C8.34615 20.3993 6.83354 19.5635 5.63499 18.365C4.43644 17.1664 3.60068 15.6538 3.22388 14.0012C2.84708 12.3486 2.94456 10.6232 3.50511 9.02361C4.06566 7.42399 5.06649 6.01514 6.39241 4.95923Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15 8.99999H20.488C20.0391 7.73461 19.3135 6.58534 18.3641 5.63593C17.4147 4.68653 16.2654 3.96092 15 3.51199V8.99999Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <p
+                  class="text-gray-700 font-semibold text-xl uppercase tracking-wide"
+                >
+                  Progress
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 2/3 End -->
+        </div>
+
+        <!-- 1/3 Stuff -->
+        <div class="flex flex-col">
+          <!-- Sharing -->
+          <div
+            class="bg-white grid grid-cols-1 gap-3 rounded-lg shadow-lg p-6 relative overflow-hidden mb-6"
+          >
+            <!-- Title -->
+            <div class="flex justify-between items-start">
+              <div class="flex items-center">
+                <svg
+                  class="h-6 w-6 text-gray-500 mr-2 flex-shrink-0"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17 20H22V18C22 17.3765 21.8057 16.7686 21.4441 16.2606C21.0826 15.7527 20.5718 15.37 19.9827 15.1658C19.3937 14.9615 18.7556 14.9459 18.1573 15.121C17.5589 15.2962 17.03 15.6534 16.644 16.143M17 20H7M17 20V18C17 17.344 16.874 16.717 16.644 16.143M16.644 16.143C16.2726 15.215 15.6318 14.4195 14.804 13.8591C13.9762 13.2988 12.9996 12.9993 12 12.9993C11.0004 12.9993 10.0238 13.2988 9.196 13.8591C8.36825 14.4195 7.72736 15.215 7.356 16.143M7 20H2V18C2.00005 17.3765 2.19434 16.7686 2.55586 16.2606C2.91739 15.7527 3.42819 15.37 4.01725 15.1658C4.60632 14.9615 5.24438 14.9459 5.84274 15.121C6.4411 15.2962 6.97003 15.6534 7.356 16.143M7 20V18C7 17.344 7.126 16.717 7.356 16.143M15 7C15 7.79565 14.6839 8.55871 14.1213 9.12132C13.5587 9.68393 12.7956 10 12 10C11.2044 10 10.4413 9.68393 9.87868 9.12132C9.31607 8.55871 9 7.79565 9 7C9 6.20435 9.31607 5.44129 9.87868 4.87868C10.4413 4.31607 11.2044 4 12 4C12.7956 4 13.5587 4.31607 14.1213 4.87868C14.6839 5.44129 15 6.20435 15 7ZM21 10C21 10.5304 20.7893 11.0391 20.4142 11.4142C20.0391 11.7893 19.5304 12 19 12C18.4696 12 17.9609 11.7893 17.5858 11.4142C17.2107 11.0391 17 10.5304 17 10C17 9.46957 17.2107 8.96086 17.5858 8.58579C17.9609 8.21071 18.4696 8 19 8C19.5304 8 20.0391 8.21071 20.4142 8.58579C20.7893 8.96086 21 9.46957 21 10ZM7 10C7 10.5304 6.78929 11.0391 6.41421 11.4142C6.03914 11.7893 5.53043 12 5 12C4.46957 12 3.96086 11.7893 3.58579 11.4142C3.21071 11.0391 3 10.5304 3 10C3 9.46957 3.21071 8.96086 3.58579 8.58579C3.96086 8.21071 4.46957 8 5 8C5.53043 8 6.03914 8.21071 6.41421 8.58579C6.78929 8.96086 7 9.46957 7 10Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <p
+                  class="text-gray-700 font-semibold text-xl uppercase tracking-wide"
+                >
+                  Shared with
+                </p>
+              </div>
+
+              <!-- Icon -->
+              <button
+                class="rounded-full bg-gray-300 p-2 flex focus:outline-none focus:shadow-outline"
+              >
+                <svg
+                  class="h-5 w-5 text-gray-700 transform translate-x-px"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18 9V12V9ZM18 12V15V12ZM18 12H21H18ZM18 12H15H18ZM13 7C13 8.06087 12.5786 9.07828 11.8284 9.82843C11.0783 10.5786 10.0609 11 9 11C7.93913 11 6.92172 10.5786 6.17157 9.82843C5.42143 9.07828 5 8.06087 5 7C5 5.93913 5.42143 4.92172 6.17157 4.17157C6.92172 3.42143 7.93913 3 9 3C10.0609 3 11.0783 3.42143 11.8284 4.17157C12.5786 4.92172 13 5.93913 13 7V7ZM3 20C3 18.4087 3.63214 16.8826 4.75736 15.7574C5.88258 14.6321 7.4087 14 9 14C10.5913 14 12.1174 14.6321 13.2426 15.7574C14.3679 16.8826 15 18.4087 15 20V21H3V20Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div class="flex">
+              <img
+                class="h-10 w-10 object-cover border-2 border-gray-300 rounded-full -mr-4 shadow flex-shrink-0"
+                src="./images/cat.jpg"
+                alt=""
+              />
+              <img
+                class="h-10 w-10 object-cover border-2 border-gray-300 rounded-full -mr-4 shadow flex-shrink-0"
+                src="./images/tepes.jpg"
+                alt=""
+              />
+              <img
+                class="h-10 w-10 object-cover border-2 border-gray-300 rounded-full -mr-4 shadow flex-shrink-0"
+                src="./images/cat.jpg"
+                alt=""
+              />
+              <img
+                class="h-10 w-10 object-cover border-2 border-gray-300 rounded-full -mr-4 shadow flex-shrink-0"
+                src="./images/tepes.jpg"
+                alt=""
+              />
+              <p class="pl-6 pt-3 text-lg text-gray-900">and 4 others</p>
+            </div>
+          </div>
+          <!-- Transactions -->
+          <div
+            class="flex-1 bg-white flex flex-col rounded-lg shadow-lg p-6 relative overflow-hidden"
+          >
+            <!-- Title -->
+            <div class="flex justify-between items-start mb-3">
+              <div class="flex items-center">
+                <svg
+                  class="h-6 w-6 text-gray-500 mr-2 flex-shrink-0"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9 5H7C6.46957 5 5.96086 5.21071 5.58579 5.58579C5.21071 5.96086 5 6.46957 5 7V19C5 19.5304 5.21071 20.0391 5.58579 20.4142C5.96086 20.7893 6.46957 21 7 21H17C17.5304 21 18.0391 20.7893 18.4142 20.4142C18.7893 20.0391 19 19.5304 19 19V7C19 6.46957 18.7893 5.96086 18.4142 5.58579C18.0391 5.21071 17.5304 5 17 5H15M9 5C9 5.53043 9.21071 6.03914 9.58579 6.41421C9.96086 6.78929 10.4696 7 11 7H13C13.5304 7 14.0391 6.78929 14.4142 6.41421C14.7893 6.03914 15 5.53043 15 5M9 5C9 4.46957 9.21071 3.96086 9.58579 3.58579C9.96086 3.21071 10.4696 3 11 3H13C13.5304 3 14.0391 3.21071 14.4142 3.58579C14.7893 3.96086 15 4.46957 15 5M12 12H15M12 16H15M9 12H9.01M9 16H9.01"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <p
+                  class="text-gray-700 font-semibold text-xl uppercase tracking-wide"
+                >
+                  Transactions
+                </p>
+              </div>
+            </div>
+
+            <div class="w-full flex flex-col bg-gray-200">
+              <!-- Repeatable Start -->
+              <div class="flex justify-between py-3 bg-white mb-px">
+                <!-- Image + Name -->
+                <div class="flex w-2/3">
+                  <img src="./images/tepes.jpg" alt="" class="h-10 w-10 object-cover border-2 border-gray-300 rounded-full shadow flex-shrink-0 mr-2">
+                  <flex class="flex-col justify-between">
+                    <h3 class="text-gray-900 text-lg font-semibold -mt-1 truncate">Tepes Alexandruuuuuu</h3>
+                    <p class="text-xs text-gray-700 uppercase">August 12, 2020</p>
+                  </flex>
+                </div>
+                <!-- Amount -->
+                <p class="text-xl font-semibold text-green-800 -mt-1 flex-shrink-0 pl-6">$200</p>
+              </div>
+              <!-- End -->
+              <!-- Repeatable Start -->
+              <div class="flex justify-between py-3 bg-white mb-px">
+                <!-- Image + Name -->
+                <div class="flex w-2/3">
+                  <img src="./images/tepes.jpg" alt="" class="h-10 w-10 object-cover border-2 border-gray-300 rounded-full shadow flex-shrink-0 mr-2">
+                  <flex class="flex-col justify-between">
+                    <h3 class="text-gray-900 text-lg font-semibold -mt-1 truncate">Rishi</h3>
+                    <p class="text-xs text-gray-700 uppercase">August 11, 2020</p>
+                  </flex>
+                </div>
+                <!-- Amount -->
+                <p class="text-xl font-semibold text-red-800 -mt-1 flex-shrink-0 pl-6">-$2000</p>
+              </div>
+              <!-- End -->
+              <!-- Repeatable Start -->
+              <div class="flex justify-between py-3 bg-white mb-px">
+                <!-- Image + Name -->
+                <div class="flex w-2/3">
+                  <img src="./images/tepes.jpg" alt="" class="h-10 w-10 object-cover border-2 border-gray-300 rounded-full shadow flex-shrink-0 mr-2">
+                  <flex class="flex-col justify-between">
+                    <h3 class="text-gray-900 text-lg font-semibold -mt-1 truncate">Iron Man</h3>
+                    <p class="text-xs text-gray-700 uppercase">August 11, 2020</p>
+                  </flex>
+                </div>
+                <!-- Amount -->
+                <p class="text-xl font-semibold text-green-800 -mt-1 flex-shrink-0 pl-6">$3000</p>
+              </div>
+              <!-- End -->
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
