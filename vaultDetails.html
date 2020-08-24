@@ -131,7 +131,7 @@
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M17 9V7C17 6.46957 16.7893 5.96086 16.4142 5.58579C16.0391 5.21071 15.5304 5 15 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V13C3 13.5304 3.21071 14.0391 3.58579 14.4142C3.96086 14.7893 4.46957 15 5 15H7M9 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V11C21 10.4696 20.7893 9.96086 20.4142 9.58579C20.0391 9.21071 19.5304 9 19 9H9C8.46957 9 7.96086 9.21071 7.58579 9.58579C7.21071 9.96086 7 10.4696 7 11V17C7 17.5304 7.21071 18.0391 7.58579 18.4142C7.96086 18.7893 8.46957 19 9 19ZM16 14C16 14.5304 15.7893 15.0391 15.4142 15.4142C15.0391 15.7893 14.5304 16 14 16C13.4696 16 12.9609 15.7893 12.5858 15.4142C12.2107 15.0391 12 14.5304 12 14C12 13.4696 12.2107 12.9609 12.5858 12.5858C12.9609 12.2107 13.4696 12 14 12C14.5304 12 15.0391 12.2107 15.4142 12.5858C15.7893 12.9609 16 13.4696 16 14Z"
+                    d="M12 8.99997V11M12 15H12.01M20.618 5.98397C17.4561 6.15189 14.3567 5.05858 12 2.94397C9.64327 5.05858 6.5439 6.15189 3.382 5.98397C3.12754 6.96908 2.99918 7.98252 3 8.99997C3 14.591 6.824 19.29 12 20.622C17.176 19.29 21 14.592 21 8.99997C21 7.95797 20.867 6.94797 20.618 5.98397Z"
                     stroke="currentColor"
                     stroke-width="2"
                     stroke-linecap="round"
@@ -142,7 +142,7 @@
                 <p
                   class="text-gray-700 font-semibold text-xl uppercase tracking-wide"
                 >
-                  Set a Goal
+                  Deadline
                 </p>
               </div>
 
@@ -168,9 +168,79 @@
                 </svg>
               </button>
             </div>
-
-            <div class="bg-gray-200 w-full h-12"></div>
-            <div class="bg-gray-200 w-full h-12"></div>
+            <!-- Deadline -->
+            <div class="relative w-full">
+              <input
+                type="date"
+                class="w-full bg-gray-200 py-2 px-4 text-lg text-gray-700 rounded-lg border-2 border-gray-400 focus:outline-none focus:shadow-outline"
+                name=""
+                id=""
+              />
+              <div
+                class="w-12 h-full bg-gray-300 border-t-2 border-r-2 border-b-2 border-gray-400 absolute top-0 right-0 rounded rounded-tr-lg rounded-br-lg pointer-events-none flex justify-center items-center cursor-pointer"
+              >
+                <svg
+                  class="h-6 w-6 text-gray-700 flex-shrink-0"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 7V3M16 7V3M7 11H17M5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <!-- Per week thing -->
+            <div class="relative w-full">
+              <input
+                type="text"
+                class="w-full bg-gray-200 py-2 px-4 text-lg text-gray-700 rounded-lg border-2 border-gray-400 focus:outline-none focus:shadow-outline"
+                name=""
+                id=""
+                placeholder="$000"
+              />
+              <div
+                class="w-32 h-full bg-gray-300 border-t-2 border-r-2 border-b-2 border-gray-400 absolute top-0 right-0 rounded-tr-lg rounded-br-lg"
+              >
+                <!-- Arrow -->
+                <div
+                  class="h-full w-10 absolute top-0 right-0 flex justify-center items-center pointer-events-none"
+                >
+                  <svg
+                    class="w-4 h-4 text-gray-700 flex-shrink-0"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19 9L12 16L5 9"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <select
+                  name=""
+                  id=""
+                  class="w-full h-full bg-gray-300 rounded-tr-md rounded-br-md focus:outline-none focus:shadow-outline cursor-pointer lowercase text-sm font-semibold tracking-wider text-gray-700 appearance-none pl-3 pr-6"
+                >
+                  <option value="">per week</option>
+                  <option value="" selected>per month</option>
+                  <option value="">per year</option>
+                </select>
+              </div>
+            </div>
           </div>
           <!-- Details -->
           <div
@@ -188,17 +258,18 @@
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M12 8.99997V11M12 15H12.01M20.618 5.98397C17.4561 6.15189 14.3567 5.05858 12 2.94397C9.64327 5.05858 6.5439 6.15189 3.382 5.98397C3.12754 6.96908 2.99918 7.98252 3 8.99997C3 14.591 6.824 19.29 12 20.622C17.176 19.29 21 14.592 21 8.99997C21 7.95797 20.867 6.94797 20.618 5.98397Z"
+                    d="M10 6H5C4.46957 6 3.96086 6.21071 3.58579 6.58579C3.21071 6.96086 3 7.46957 3 8V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V8C21 7.46957 20.7893 6.96086 20.4142 6.58579C20.0391 6.21071 19.5304 6 19 6H14M10 6V5C10 4.46957 10.2107 3.96086 10.5858 3.58579C10.9609 3.21071 11.4696 3 12 3C12.5304 3 13.0391 3.21071 13.4142 3.58579C13.7893 3.96086 14 4.46957 14 5V6M10 6C10 6.53043 10.2107 7.03914 10.5858 7.41421C10.9609 7.78929 11.4696 8 12 8C12.5304 8 13.0391 7.78929 13.4142 7.41421C13.7893 7.03914 14 6.53043 14 6M9 14C9.53043 14 10.0391 13.7893 10.4142 13.4142C10.7893 13.0391 11 12.5304 11 12C11 11.4696 10.7893 10.9609 10.4142 10.5858C10.0391 10.2107 9.53043 10 9 10C8.46957 10 7.96086 10.2107 7.58579 10.5858C7.21071 10.9609 7 11.4696 7 12C7 12.5304 7.21071 13.0391 7.58579 13.4142C7.96086 13.7893 8.46957 14 9 14ZM9 14C10.306 14 11.417 14.835 11.83 16M9 14C8.37938 13.9998 7.77397 14.1921 7.26715 14.5502C6.76032 14.9084 6.37701 15.4149 6.17 16M15 11H18M15 15H17"
                     stroke="currentColor"
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   />
                 </svg>
+
                 <p
                   class="text-gray-700 font-semibold text-xl uppercase tracking-wide"
                 >
-                  Vault Details
+                  Edit Details
                 </p>
               </div>
 
@@ -372,45 +443,6 @@
               </div>
             </div>
           </div>
-          <!-- Progress -->
-          <div
-            class="md:col-span-2 bg-white rounded-lg shadow-lg p-6 grid grid-cols-1 md:grid-cols-2 gap-6 overflow-hidden"
-          >
-            <!-- Title -->
-            <div class="md:col-span-2 flex justify-between items-start">
-              <div class="flex items-center">
-                <svg
-                  class="h-5 w-5 text-gray-500 mr-2 flex-shrink-0"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6.39241 4.95923C7.71833 3.90331 9.31546 3.24325 11 3.05499V13H20.945C20.7567 14.6845 20.0966 16.2816 19.0407 17.6076C17.9848 18.9335 16.576 19.9343 14.9763 20.4949C13.3767 21.0554 11.6513 21.1529 9.99874 20.7761C8.34615 20.3993 6.83354 19.5635 5.63499 18.365C4.43644 17.1664 3.60068 15.6538 3.22388 14.0012C2.84708 12.3486 2.94456 10.6232 3.50511 9.02361C4.06566 7.42399 5.06649 6.01514 6.39241 4.95923Z"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M15 8.99999H20.488C20.0391 7.73461 19.3135 6.58534 18.3641 5.63593C17.4147 4.68653 16.2654 3.96092 15 3.51199V8.99999Z"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-
-                <p
-                  class="text-gray-700 font-semibold text-xl uppercase tracking-wide"
-                >
-                  Progress
-                </p>
-              </div>
-            </div>
-          </div>
           <!-- 2/3 End -->
         </div>
 
@@ -496,123 +528,137 @@
           </div>
           <!-- Transactions -->
           <div
-            class="flex-1 bg-white flex flex-col rounded-lg shadow-lg p-6 relative overflow-hidden"
+            class="flex-1 bg-white flex flex-col justify-between rounded-lg shadow-lg relative overflow-hidden"
           >
-            <!-- Title -->
-            <div class="flex justify-between items-start mb-3">
-              <div class="flex items-center">
-                <svg
-                  class="h-5 w-5 text-gray-500 mr-2 flex-shrink-0"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9 5H7C6.46957 5 5.96086 5.21071 5.58579 5.58579C5.21071 5.96086 5 6.46957 5 7V19C5 19.5304 5.21071 20.0391 5.58579 20.4142C5.96086 20.7893 6.46957 21 7 21H17C17.5304 21 18.0391 20.7893 18.4142 20.4142C18.7893 20.0391 19 19.5304 19 19V7C19 6.46957 18.7893 5.96086 18.4142 5.58579C18.0391 5.21071 17.5304 5 17 5H15M9 5C9 5.53043 9.21071 6.03914 9.58579 6.41421C9.96086 6.78929 10.4696 7 11 7H13C13.5304 7 14.0391 6.78929 14.4142 6.41421C14.7893 6.03914 15 5.53043 15 5M9 5C9 4.46957 9.21071 3.96086 9.58579 3.58579C9.96086 3.21071 10.4696 3 11 3H13C13.5304 3 14.0391 3.21071 14.4142 3.58579C14.7893 3.96086 15 4.46957 15 5M12 12H15M12 16H15M9 12H9.01M9 16H9.01"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+            <div class="w-full flex flex-col">
+              <!-- Title -->
+              <div class="flex justify-between items-start mb-3 px-6 pt-6">
+                <div class="flex items-center">
+                  <svg
+                    class="h-5 w-5 text-gray-500 mr-2 flex-shrink-0"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9 5H7C6.46957 5 5.96086 5.21071 5.58579 5.58579C5.21071 5.96086 5 6.46957 5 7V19C5 19.5304 5.21071 20.0391 5.58579 20.4142C5.96086 20.7893 6.46957 21 7 21H17C17.5304 21 18.0391 20.7893 18.4142 20.4142C18.7893 20.0391 19 19.5304 19 19V7C19 6.46957 18.7893 5.96086 18.4142 5.58579C18.0391 5.21071 17.5304 5 17 5H15M9 5C9 5.53043 9.21071 6.03914 9.58579 6.41421C9.96086 6.78929 10.4696 7 11 7H13C13.5304 7 14.0391 6.78929 14.4142 6.41421C14.7893 6.03914 15 5.53043 15 5M9 5C9 4.46957 9.21071 3.96086 9.58579 3.58579C9.96086 3.21071 10.4696 3 11 3H13C13.5304 3 14.0391 3.21071 14.4142 3.58579C14.7893 3.96086 15 4.46957 15 5M12 12H15M12 16H15M9 12H9.01M9 16H9.01"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
 
-                <p
-                  class="text-gray-700 font-semibold text-xl uppercase tracking-wide"
-                >
-                  Transactions
-                </p>
+                  <p
+                    class="text-gray-700 font-semibold text-xl uppercase tracking-wide"
+                  >
+                    Recent Logs
+                  </p>
+                </div>
+              </div>
+              <!-- Content -->
+              <div class="w-full flex flex-col relative px-6 mb-6">
+                <!-- Absolute line -->
+                <div
+                  class="absolute w-full h-px bg-white bottom-0 left-0"
+                ></div>
+                <!-- Repeatable Start -->
+                <div class="flex justify-between py-3 border-b border-gray-300">
+                  <!-- Image + Name -->
+                  <div class="flex">
+                    <img
+                      src="./images/tepes.jpg"
+                      alt=""
+                      class="h-10 w-10 object-cover border-2 border-gray-300 rounded-full shadow flex-shrink-0 mr-2"
+                    />
+                    <flex class="flex-col justify-between">
+                      <h3
+                        class="text-gray-900 text-lg font-semibold -mt-1 truncate w-2/3 xl:w-48"
+                      >
+                        Tepes Alexandru
+                      </h3>
+                      <p class="text-xs text-gray-700 uppercase">
+                        August 12, 2020
+                      </p>
+                    </flex>
+                  </div>
+                  <!-- Amount -->
+                  <p
+                    class="text-xl font-semibold text-green-800 -mt-1 flex-shrink-0 pl-6"
+                  >
+                    $200
+                  </p>
+                </div>
+                <!-- End -->
+                <!-- Repeatable Start -->
+                <div class="flex justify-between py-3 border-b border-gray-300">
+                  <!-- Image + Name -->
+                  <div class="flex">
+                    <img
+                      src="./images/tepes.jpg"
+                      alt=""
+                      class="h-10 w-10 object-cover border-2 border-gray-300 rounded-full shadow flex-shrink-0 mr-2"
+                    />
+                    <flex class="flex-col justify-between">
+                      <h3
+                        class="text-gray-900 text-lg font-semibold -mt-1 truncate w-2/3 xl:w-48"
+                      >
+                        Rishi
+                      </h3>
+                      <p class="text-xs text-gray-700 uppercase">
+                        August 11, 2020
+                      </p>
+                    </flex>
+                  </div>
+                  <!-- Amount -->
+                  <p
+                    class="text-xl font-semibold text-red-800 -mt-1 flex-shrink-0 pl-6"
+                  >
+                    -$2000
+                  </p>
+                </div>
+                <!-- End -->
+                <!-- Repeatable Start -->
+                <div class="flex justify-between py-3 border-b border-gray-300">
+                  <!-- Image + Name -->
+                  <div class="flex">
+                    <img
+                      src="./images/tepes.jpg"
+                      alt=""
+                      class="h-10 w-10 object-cover border-2 border-gray-300 rounded-full shadow flex-shrink-0 mr-2"
+                    />
+                    <flex class="flex-col justify-between">
+                      <h3
+                        class="text-gray-900 text-lg font-semibold -mt-1 truncate w-2/3 xl:w-48"
+                      >
+                        Iron Man
+                      </h3>
+                      <p class="text-xs text-gray-700 uppercase">
+                        August 11, 2020
+                      </p>
+                    </flex>
+                  </div>
+                  <!-- Amount -->
+                  <p
+                    class="text-xl font-semibold text-green-800 -mt-1 flex-shrink-0 pl-6"
+                  >
+                    $3000
+                  </p>
+                </div>
+                <!-- End -->
               </div>
             </div>
-
-            <div class="w-full flex flex-col bg-gray-300 relative">
-              <!-- Absolute line -->
-              <div class="absolute w-full bg-white h-px bottom-0 left-0"></div>
-              <!-- Repeatable Start -->
-              <div class="flex justify-between py-3 bg-white mb-px">
-                <!-- Image + Name -->
-                <div class="flex">
-                  <img
-                    src="./images/tepes.jpg"
-                    alt=""
-                    class="h-10 w-10 object-cover border-2 border-gray-300 rounded-full shadow flex-shrink-0 mr-2"
-                  />
-                  <flex class="flex-col justify-between">
-                    <h3
-                      class="text-gray-900 text-lg font-semibold -mt-1 truncate w-48"
-                    >
-                      Tepes Alexandruuuuuu
-                    </h3>
-                    <p class="text-xs text-gray-700 uppercase">
-                      August 12, 2020
-                    </p>
-                  </flex>
-                </div>
-                <!-- Amount -->
-                <p
-                  class="text-xl font-semibold text-green-800 -mt-1 flex-shrink-0 pl-6"
-                >
-                  $200
-                </p>
-              </div>
-              <!-- End -->
-              <!-- Repeatable Start -->
-              <div class="flex justify-between py-3 bg-white mb-px">
-                <!-- Image + Name -->
-                <div class="flex w-2/3">
-                  <img
-                    src="./images/tepes.jpg"
-                    alt=""
-                    class="h-10 w-10 object-cover border-2 border-gray-300 rounded-full shadow flex-shrink-0 mr-2"
-                  />
-                  <flex class="flex-col justify-between">
-                    <h3
-                      class="text-gray-900 text-lg font-semibold -mt-1 truncate"
-                    >
-                      Rishi
-                    </h3>
-                    <p class="text-xs text-gray-700 uppercase">
-                      August 11, 2020
-                    </p>
-                  </flex>
-                </div>
-                <!-- Amount -->
-                <p
-                  class="text-xl font-semibold text-red-800 -mt-1 flex-shrink-0 pl-6"
-                >
-                  -$2000
-                </p>
-              </div>
-              <!-- End -->
-              <!-- Repeatable Start -->
-              <div class="flex justify-between py-3 bg-white mb-px">
-                <!-- Image + Name -->
-                <div class="flex w-2/3">
-                  <img
-                    src="./images/tepes.jpg"
-                    alt=""
-                    class="h-10 w-10 object-cover border-2 border-gray-300 rounded-full shadow flex-shrink-0 mr-2"
-                  />
-                  <flex class="flex-col justify-between">
-                    <h3
-                      class="text-gray-900 text-lg font-semibold -mt-1 truncate"
-                    >
-                      Iron Man
-                    </h3>
-                    <p class="text-xs text-gray-700 uppercase">
-                      August 11, 2020
-                    </p>
-                  </flex>
-                </div>
-                <!-- Amount -->
-                <p
-                  class="text-xl font-semibold text-green-800 -mt-1 flex-shrink-0 pl-6"
-                >
-                  $3000
-                </p>
-              </div>
-              <!-- End -->
+            <!-- View All -->
+            <div
+              class="w-full h-12 bg-gray-200 flex items-center justify-end px-4"
+            >
+              <a
+                href="#"
+                class="text-gray-700 font-semibold focus:outline-none focus:shadow-outline px-2 rounded-full"
+                >View All</a
+              >
             </div>
           </div>
         </div>
