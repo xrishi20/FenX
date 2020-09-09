@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/tailwind.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body class="bg-gray-200 text-gray-900">
+    <header class="w-full bg-gray-900 shadow-lg mb-6">
+      <div
+        class="max-w-6xl w-full mx-auto px-6 py-3 flex justify-between items-center"
+      >
+        <div class="logo flex flex-col">
+          <p class="text-4xl text-white -ml-px">FenX</p>
+          <p
+            class="text-xs uppercase text-indigo-200 -mt-1 mb-2 tracking-wider"
+          >
+            The Financial Manager
+          </p>
+        </div>
+        <p class="w-32 text-indigo-200 text-sm pl-3">
+          Made with 💙 by <span class="text-white">Rishi</span> &
+          <span class="text-white">Alex</span>.
+        </p>
+      </div>
+    </header>
+
+    <main class="max-w-screen-xl w-full mx-auto px-6">
+      <!-- Modal -->
+      <div
+        class="max-w-3xl w-full mx-auto bg-white rounded-lg shadow-xl p-6 md:p-8 grid grid-cols-1 md:grid-cols-2 gap-6 flex-shrink-0 relative overflow-hidden"
+      >
+        <!-- Image Box -->
+        <div class="grid grid-cols-1">
+          <div
+            class="relative overflow-hidden rounded-lg shadow-md"
+            style="padding-top: 56.25%"
+          >
+            <div
+              class="absolute w-full h-full top-0 left-0 bg-gray-300 flex items-center justify-center"
+            >
+              <p class="text-gray-600 text-2xl font-bold">No Image</p>
+            </div>
+            <!-- Remove Image tag completely, add it with src to show -->
+            <img
+              class="absolute top-0 left-0 object-cover h-full w-full flex-1 flex-shrink-0 rounded-lg"
+              src="./images/cat.jpg"
+              alt=""
+            />
+            <button
+              class="absolute bottom-0 right-0 m-2 p-1 bg-white rounded-full shadow-base focus:outline-none focus:shadow-outline cursor-pointer"
+            >
+              <svg
+                class="h-8 w-8"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <rect width="40" height="40" rx="20" fill="url(#pattern0)" />
+                <defs>
+                  <pattern
+                    id="pattern0"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use xlink:href="#image0" transform="scale(0.00390625)" />
+                  </pattern>
+                  <image
+                    id="image0"
+                    width="256"
+                    height="256"
+                    xlink:href="data:image/png;base64,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"
+                  />
+                </defs>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- Inputs & Buttons-->
+        <div class="flex flex-col justify-between flex-1">
+          <div class="w-full mb-6">
+            <!-- Input-->
+            <label
+              for="name"
+              class="text-xs md:text-sm uppercase text-gray-700 mb-1 flex"
+              >Name</label
+            >
+            <div class="w-full relative mb-3">
+              <input
+                class="border-2 text-gray-900 border-gray-300 bg-gray-200 py-2 pl-4 pr-12 rounded-lg md:text-lg w-full focus:outline-none focus:shadow-outline"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Car, House etc"
+                autocomplete="off"
+              />
+            </div>
+            <!-- Input-->
+            <label
+              for="Amount"
+              class="text-xs md:text-sm uppercase text-gray-700 mb-1 flex"
+              >Amount</label
+            >
+            <div class="relative w-full">
+              <input
+                class="border-2 text-gray-900 border-gray-300 bg-gray-200 py-2 px-4 rounded-lg md:text-lg w-full focus:outline-none focus:shadow-outline"
+                type="text"
+                name="Amount"
+                id="Amount"
+                placeholder="$000"
+                autocomplete="off"
+              />
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div class="w-full grid gap-3 sm:flex">
+            <button
+              class="bg-gray-900 text-white hover:bg-gray-800 text-base font-semibold py-2 px-6 uppercase tracking-wider rounded-lg focus:outline-none focus:shadow-outline border-2 border-gray-900"
+            >
+              Save Changes
+            </button>
+            <button
+              class="text-gray-700 hover:bg-gray-200 text-base font-semibold py-2 px-6 uppercase tracking-wider rounded-lg focus:outline-none focus:shadow-outline border-2 border-gray-900"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

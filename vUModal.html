@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/tailwind.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body class="bg-gray-200 text-gray-900">
+    <header class="w-full bg-gray-900 shadow-lg mb-6">
+      <div
+        class="max-w-6xl w-full mx-auto px-6 py-3 flex justify-between items-center"
+      >
+        <div class="logo flex flex-col">
+          <p class="text-4xl text-white -ml-px">FenX</p>
+          <p
+            class="text-xs uppercase text-indigo-200 -mt-1 mb-2 tracking-wider"
+          >
+            The Financial Manager
+          </p>
+        </div>
+        <p class="w-32 text-indigo-200 text-sm pl-3">
+          Made with 💙 by <span class="text-white">Rishi</span> &
+          <span class="text-white">Alex</span>.
+        </p>
+      </div>
+    </header>
+
+    <main class="max-w-screen-xl w-full mx-auto px-6">
+      <!-- Modal -->
+      <div
+        class="max-w-4xl w-full mx-auto bg-white rounded-lg shadow-xl p-6 md:p-8 flex flex-col overflow-hidden"
+      >
+        <!-- Header -->
+        <div class="flex justify-between items-baseline mb-6">
+          <div class="flex items-baseline">
+            <button
+              class="p-1 mr-3 rounded-full border-2 hover:bg-gray-300 border-gray-300 focus:outline-none focus:shadow-outline"
+            >
+              <svg
+                class="h-3 w-3 md:h-4 md:w-4 text-gray-700"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10 19L3 12M3 12L10 5M3 12H21"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <h1
+              class="text-gray-900 uppercase font-semibold text-xl md:text-2xl tracking-wide"
+            >
+              Unsplash Search
+            </h1>
+          </div>
+        </div>
+        <form class="w-full flex mb-6">
+          <input
+            type="text"
+            class="flex-1 py-2 px-4 text-gray-900 bg-gray-200 border-2 border-gray-300 focus:outline-none focus:shadow-outline rounded-tl-md rounded-bl-md"
+            placeholder="Seach for Images..."
+          />
+          <div
+            class="w-12 h-12 bg-gray-900 relative flex-shrink-0 flex items-center justify-center rounded-tr-md rounded-br-md"
+          >
+            <svg
+              class="h-6 w-6 m-2"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21 21L15 15M17 10C17 10.9193 16.8189 11.8295 16.4672 12.6788C16.1154 13.5281 15.5998 14.2997 14.9497 14.9497C14.2997 15.5998 13.5281 16.1154 12.6788 16.4672C11.8295 16.8189 10.9193 17 10 17C9.08075 17 8.1705 16.8189 7.32122 16.4672C6.47194 16.1154 5.70026 15.5998 5.05025 14.9497C4.40024 14.2997 3.88463 13.5281 3.53284 12.6788C3.18106 11.8295 3 10.9193 3 10C3 8.14348 3.7375 6.36301 5.05025 5.05025C6.36301 3.7375 8.14348 3 10 3C11.8565 3 13.637 3.7375 14.9497 5.05025C16.2625 6.36301 17 8.14348 17 10Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <input
+              type="submit"
+              value=""
+              class="w-full h-full absolute top-0 left-0 bg-gray-900 bg-opacity-0 focus:outline-none focus:shadow-outline rounded-r-md cursor-pointer"
+            />
+          </div>
+        </form>
+        <!-- Placeholder SVG -->
+        <img
+          class="w-full h-full hidden"
+          style="max-height: 50vh"
+          src="./images/Usability testing-pana.svg"
+          alt=""
+        />
+        <!-- Images -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full h-full overflow-auto" style="max-height: 50vh">
+          <!-- Image -->
+          <div
+            class="relative overflow-hidden rounded-lg shadow-md cursor-pointer"
+            style="padding-top: 56.25%"
+          >
+            <img
+              class="absolute top-0 left-0 object-cover object-center h-full w-full flex-1 flex-shrink-0 rounded-lg"
+              src="./images/tepes.jpg"
+              alt=""
+            />
+          </div>
+          <!-- Image -->
+          <div
+            class="relative overflow-hidden rounded-lg shadow-md cursor-pointer"
+            style="padding-top: 56.25%"
+          >
+            <img
+              class="absolute top-0 left-0 object-cover object-center h-full w-full flex-1 flex-shrink-0 rounded-lg"
+              src="./images/tepes.jpg"
+              alt=""
+            />
+          </div>
+          <!-- Image -->
+          <div
+            class="relative overflow-hidden rounded-lg shadow-md cursor-pointer"
+            style="padding-top: 56.25%"
+          >
+            <img
+              class="absolute top-0 left-0 object-cover object-center h-full w-full flex-1 flex-shrink-0 rounded-lg"
+              src="./images/tepes.jpg"
+              alt=""
+            />
+          </div>
+          <!-- Image -->
+          <div
+            class="relative overflow-hidden rounded-lg shadow-md cursor-pointer"
+            style="padding-top: 56.25%"
+          >
+            <img
+              class="absolute top-0 left-0 object-cover object-center h-full w-full flex-1 flex-shrink-0 rounded-lg"
+              src="./images/tepes.jpg"
+              alt=""
+            />
+          </div>
+          <!-- Image -->
+          <div
+            class="relative overflow-hidden rounded-lg shadow-md cursor-pointer"
+            style="padding-top: 56.25%"
+          >
+            <img
+              class="absolute top-0 left-0 object-cover object-center h-full w-full flex-1 flex-shrink-0 rounded-lg"
+              src="./images/tepes.jpg"
+              alt=""
+            />
+          </div>
+          <!-- Image -->
+          <div
+            class="relative overflow-hidden rounded-lg shadow-md cursor-pointer"
+            style="padding-top: 56.25%"
+          >
+            <img
+              class="absolute top-0 left-0 object-cover object-center h-full w-full flex-1 flex-shrink-0 rounded-lg"
+              src="./images/tepes.jpg"
+              alt=""
+            />
+          </div>
+          <!-- Image -->
+          <div
+            class="relative overflow-hidden rounded-lg shadow-md cursor-pointer"
+            style="padding-top: 56.25%"
+          >
+            <img
+              class="absolute top-0 left-0 object-cover object-center h-full w-full flex-1 flex-shrink-0 rounded-lg"
+              src="./images/tepes.jpg"
+              alt=""
+            />
+          </div>
+          <!-- Image -->
+          <div
+            class="relative overflow-hidden rounded-lg shadow-md cursor-pointer"
+            style="padding-top: 56.25%"
+          >
+            <img
+              class="absolute top-0 left-0 object-cover object-center h-full w-full flex-1 flex-shrink-0 rounded-lg"
+              src="./images/tepes.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

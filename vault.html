@@ -11,7 +11,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body class="pattern bg-gray-200 text-gray-900">
+  <body class="bg-gray-200 text-gray-900">
     <header class="w-full bg-gray-900 shadow-lg mb-6">
       <div
         class="max-w-screen-xl w-full mx-auto px-6 py-3 flex justify-between items-center"
@@ -35,7 +35,7 @@
       <!-- Top Content -->
 
       <div
-        class="flex flex-col sm:flex-row justify-between sm:items-center mb-6 pb-4 border-b-2 border-gray-400"
+        class="flex flex-col sm:flex-row justify-between sm:items-center mb-6 pb-4 border-b-2 border-gray-300"
       >
         <div class="flex justify-between items-center pb-4 sm:pb-0">
           <!-- Title -->
@@ -45,7 +45,7 @@
             Your Vaults
           </h1>
           <!-- Total -->
-          <div class="flex flex-col sm:border-l-2 border-gray-400 pl-4">
+          <div class="flex flex-col sm:border-l-2 border-gray-300 pl-4">
             <label
               class="text-xs md:text-sm font-bold uppercase tracking-wide -mb-1 text-gray-700"
             >
@@ -74,7 +74,7 @@
         <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden">
           <div
             class="image-box w-full relative bg-white"
-            style="padding-top: 56.25%;"
+            style="padding-top: 56.25%"
           >
             <img
               class="absolute top-0 left-0 w-full h-full object-center object-cover"
@@ -82,9 +82,28 @@
               alt="vault-item"
             />
             <div class="absolute top-0 left-0">
-              <div class="bg-green-200 h-12 w-12 shadow-md p-1" style="-webkit-clip-path: polygon(0 0, 0% 100%, 100% 0); clip-path: polygon(0 0, 0% 100%, 100% 0);">
-                <svg class="text-green-800" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <div
+                class="bg-green-200 h-12 w-12 shadow-md p-1"
+                style="
+                  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+                  clip-path: polygon(0 0, 0% 100%, 100% 0);
+                "
+              >
+                <svg
+                  class="text-green-800"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 13L9 17L19 7"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
                 </svg>
               </div>
             </div>
