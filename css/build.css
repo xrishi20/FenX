@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+.input {
+    @apply w-full bg-gray-100 py-2 px-4 text-gray-800 font-medium rounded-lg border-2 border-gray-300;
+}
+
+.input:focus {
+    @apply outline-none shadow-outline;
+}
+
+.radioInput {
+    @apply absolute top-0 left-0 w-full h-full appearance-none z-10 rounded-full cursor-pointer;
+}
+
+.radioInput:focus {
+    @apply outline-none shadow-outline;
+}
+
+.svgStyle {
+    @apply h-5 w-5 flex-shrink-0;
+}
+
+.smolBtn {
+    @apply rounded-full bg-gray-300 p-2 flex;
+}
+
+.smolBtn:focus {
+    @apply outline-none shadow-outline;
+}
+
+.avatar {
+    @apply h-10 w-10 object-cover border-2 border-gray-300 rounded-full flex-shrink-0;
+}
+
+.pBtn {
+    @apply bg-gray-900 text-white py-3 px-6 rounded-lg;
+}
+
+.pBtn:focus {
+    @apply outline-none shadow-outline;
+}
+
+.sBtn {
+    @apply bg-gray-400 text-gray-900 py-3 px-6 rounded-lg;
+}
+
+.sBtn:focus {
+    @apply outline-none shadow-outline;
+}
+
+@tailwind utilities;

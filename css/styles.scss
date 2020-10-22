@@ -19,3 +19,37 @@ body {
         clip-path: polygon(15% 0%, 100% 0, 100% 100%, 0% 100%);
     }
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1A202C;
+  border-radius: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2D3748;
+}
+
+//Radio
+#myRadio:hover #radioDot {
+  opacity: 0.25 !important;
+}
+
+.radioInput ~ #radioDot {
+  opacity: 0 !important;
+}
+
+.radioInput:checked ~ #radioDot {
+  opacity: 1 !important;
+}
