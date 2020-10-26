@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="bg-gray-200 text-gray-900">
-    <header class="w-full bg-gray-900 shadow-lg mb-6">
+    <header class="w-full bg-gray-900 shadow-md mb-6">
       <div
         class="max-w-screen-xl w-full mx-auto px-6 flex justify-between items-center"
       >
@@ -84,7 +84,7 @@
                 />
               </svg>
             </button>
-            <h1 class="text-gray-800 font-bold text-xl md:text-3xl">
+            <h1 class="text-gray-800 font-bold text-2xl md:text-3xl">
               Vault Details
             </h1>
           </div>
@@ -93,7 +93,7 @@
         <article class="lg:col-span-2 grid grid-cols-1 md:grid-cols-3 gap-6">
           <!-- Details -->
           <section
-            class="md:col-span-2 bg-white rounded-lg shadow-lg px-6 pb-6 pt-4 grid grid-cols-1 md:grid-cols-2 gap-6 overflow-hidden"
+            class="md:col-span-2 bg-white rounded-lg shadow-md px-6 pb-6 pt-3 grid grid-cols-1 md:grid-cols-2 gap-6 overflow-hidden"
           >
             <!-- Title -->
             <div class="md:col-span-2 flex justify-between items-start -mb-3">
@@ -268,10 +268,10 @@
           </section>
           <!-- Progress -->
           <section
-            class="bg-white flex flex-col rounded-lg shadow-lg px-6 pb-6 pt-4 relative overflow-hidden"
+            class="bg-white flex flex-col rounded-lg shadow-md px-6 pb-6 pt-3 relative overflow-hidden"
           >
             <!-- Title -->
-            <div class="flex justify-between items-start mb-6">
+            <div class="flex justify-between items-start mb-2">
               <div class="flex items-center">
                 <svg
                   class="svgStyle text-gray-500 mr-2"
@@ -299,11 +299,12 @@
                 </p>
               </div>
             </div>
+            <p>Your Contributions : $200</p>
           </section>
           <section class="md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- Contribute -->
             <section
-              class="bg-white flex flex-col rounded-lg shadow-lg px-6 pb-6 pt-4 relative overflow-hidden"
+              class="bg-white flex flex-col rounded-lg shadow-md px-6 pb-6 pt-3 relative overflow-hidden"
             >
               <!-- Title -->
               <div class="flex justify-between items-start mb-6">
@@ -423,7 +424,7 @@
 
             <!-- Goals -->
             <div
-              class="bg-white flex flex-col rounded-lg shadow-lg px-6 pb-6 pt-4 relative overflow-hidden"
+              class="bg-white flex flex-col rounded-lg shadow-md px-6 pb-6 pt-3 relative overflow-hidden"
             >
               <!-- Title -->
               <div class="flex justify-between items-start mb-4">
@@ -548,7 +549,7 @@
         <article class="flex flex-col">
           <!-- Sharing -->
           <section
-            class="bg-white grid grid-cols-1 gap-3 rounded-lg shadow-lg px-6 pb-6 pt-4 relative overflow-hidden mb-6"
+            class="bg-white grid grid-cols-1 gap-2 rounded-lg shadow-md px-6 pb-6 pt-3 relative overflow-hidden mb-6"
           >
             <!-- Title -->
             <div class="flex justify-between items-start">
@@ -609,11 +610,11 @@
           </section>
           <!-- Transactions -->
           <section
-            class="flex-1 bg-white flex flex-col justify-between rounded-lg shadow-lg relative overflow-hidden"
+            class="flex-1 bg-white flex flex-col justify-between rounded-lg shadow-md relative overflow-hidden"
           >
             <div class="w-full flex flex-col">
               <!-- Title -->
-              <div class="flex justify-between items-start mb-2 px-6 pt-4">
+              <div class="flex justify-between items-start mb-2 px-6 pt-3">
                 <div class="flex items-center">
                   <svg
                     class="svgStyle text-gray-500 mr-2 -mt-px"
@@ -640,7 +641,7 @@
                 </div>
               </div>
               <!-- Content -->
-              <div class="w-full flex flex-col relative px-6">
+              <div class="w-full flex flex-col relative px-6 mb-3">
                 <!-- Absolute line -->
                 <div
                   class="absolute w-full h-px bg-white bottom-0 left-0"
@@ -654,7 +655,7 @@
                       <h3
                         class="text-gray-900 md:text-lg font-semibold -mt-px truncate w-32 xl:w-48"
                       >
-                        Tepes Alexandru
+                        Captain America
                       </h3>
                       <p class="text-xs text-gray-700 uppercase">
                         August 12, 2020
@@ -663,33 +664,9 @@
                   </div>
                   <!-- Amount -->
                   <p
-                    class="md:text-xl font-semibold text-green-800 -mt-1 flex-shrink-0 pl-6"
+                    class="md:text-lg font-semibold text-green-800 -mt-1 flex-shrink-0 pl-6 pt-1"
                   >
-                    $200
-                  </p>
-                </div>
-                <!-- End -->
-                <!-- Repeatable Start -->
-                <div class="flex justify-between py-2 border-b border-gray-300">
-                  <!-- Image + Name -->
-                  <div class="flex">
-                    <img src="./images/tepes.jpg" alt="" class="avatar mr-2" />
-                    <flex class="flex-col justify-between">
-                      <h3
-                        class="text-gray-900 md:text-lg font-semibold -mt-px truncate w-32 xl:w-48"
-                      >
-                        Rishi
-                      </h3>
-                      <p class="text-xs text-gray-700 uppercase">
-                        August 11, 2020
-                      </p>
-                    </flex>
-                  </div>
-                  <!-- Amount -->
-                  <p
-                    class="md:text-xl font-semibold text-red-800 -mt-1 flex-shrink-0 pl-6"
-                  >
-                    -$2000
+                    $2000
                   </p>
                 </div>
                 <!-- End -->
@@ -705,15 +682,39 @@
                         Iron Man
                       </h3>
                       <p class="text-xs text-gray-700 uppercase">
-                        August 11, 2020
+                        August 10, 2020
                       </p>
                     </flex>
                   </div>
                   <!-- Amount -->
                   <p
-                    class="md:text-xl font-semibold text-green-800 -mt-1 flex-shrink-0 pl-6"
+                    class="md:text-lg font-semibold text-green-800 -mt-1 flex-shrink-0 pl-6 pt-1"
                   >
                     $3000
+                  </p>
+                </div>
+                <!-- End -->
+                <!-- Repeatable Start -->
+                <div class="flex justify-between py-2 border-b border-gray-300">
+                  <!-- Image + Name -->
+                  <div class="flex">
+                    <img src="./images/tepes.jpg" alt="" class="avatar mr-2" />
+                    <flex class="flex-col justify-between">
+                      <h3
+                        class="text-gray-900 md:text-lg font-semibold -mt-px truncate w-32 xl:w-48"
+                      >
+                        Thanos
+                      </h3>
+                      <p class="text-xs text-gray-700 uppercase">
+                        August 02, 2020
+                      </p>
+                    </flex>
+                  </div>
+                  <!-- Amount -->
+                  <p
+                    class="md:text-lg font-semibold text-red-800 -mt-1 flex-shrink-0 pl-6 pt-1"
+                  >
+                    $10,000
                   </p>
                 </div>
                 <!-- End -->
@@ -721,11 +722,11 @@
             </div>
             <!-- View All -->
             <div
-              class="w-full h-12 bg-gray-100 flex items-center justify-end px-4"
+              class="w-full bg-gray-100 flex items-center justify-end px-4 py-3"
             >
               <a
                 href="#"
-                class="text-gray-700 font-semibold focus:outline-none focus:shadow-outline px-2 rounded-full"
+                class="text-gray-700 font-semibold focus:outline-none focus:shadow-outline px-2 rounded-full text-sm"
                 >View All</a
               >
             </div>

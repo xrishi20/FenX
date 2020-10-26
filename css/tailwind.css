@@ -708,6 +708,12 @@ video {
   border-radius: 0.5rem;
 }
 
+.pBtn:hover {
+  --bg-opacity: 1;
+  background-color: #2d3748;
+  background-color: rgba(45, 55, 72, var(--bg-opacity));
+}
+
 .pBtn:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -728,10 +734,27 @@ video {
   border-radius: 0.5rem;
 }
 
+.sBtn:hover {
+  --bg-opacity: 1;
+  background-color: #a0aec0;
+  background-color: rgba(160, 174, 192, var(--bg-opacity));
+}
+
 .sBtn:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
   box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+.vaultPrice {
+  margin-left: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 5rem;
+  text-align: right;
+  letter-spacing: 0.1em;
+  --font-variant-numeric-spacing: tabular-nums;
 }
 
 .space-y-0 > :not(template) ~ :not(template) {
