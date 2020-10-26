@@ -59,36 +59,43 @@
       </div>
     </header>
 
-    <main class="max-w-screen-xl w-full mx-auto px-6 mb-6">
-      <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
-        <!-- Header -->
-        <article class="lg:col-span-3 flex justify-between items-baseline">
-          <div class="flex items-center">
-            <a href="./vault.html"
-              class="flex p-1 md:p-2 mr-4 rounded-full border-2 hover:bg-gray-300 border-gray-400 focus:outline-none focus:shadow-outline"
+    <main class="max-w-screen-xl w-full mx-auto px-6 mb-6 flex flex-col sm:grid grid-cols-2 sm:items-center">
+      <!-- Header -->
+      <article class="flex justify-between items-baseline mb-6">
+        <div class="flex items-center">
+          <a
+            href="./vault.html"
+            class="flex p-1 md:p-2 mr-4 rounded-full border-2 hover:bg-gray-300 border-gray-400 focus:outline-none focus:shadow-outline"
+          >
+            <svg
+              class="svgStyle text-gray-700"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                class="svgStyle text-gray-700"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M10 19L3 12M3 12L10 5M3 12H21"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </a>
-            <h1 class="text-gray-800 font-bold text-2xl md:text-3xl">
-              Vault's Dashboard
-            </h1>
-          </div>
-        </article>
+              <path
+                d="M10 19L3 12M3 12L10 5M3 12H21"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <h1 class="text-gray-800 font-bold text-2xl md:text-3xl">
+            Vault's Dashboard
+          </h1>
+        </div>
+      </article>
+      <!-- CTA(s) -->
+      <div class="w-full flex flex-col-reverse sm:flex-row sm:justify-end mb-6 order-3 sm:order-none">
+        <button class="sBtn sm:mr-3">Delete</button>
+        <button class="pBtn mb-3 sm:mb-0">Save Changes</button>
+      </div>
+      <!-- Content -->
+      <section class="sm:col-span-2 w-full grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
         <!-- 2/3 Stuff -->
         <article class="lg:col-span-2 grid grid-cols-1 md:grid-cols-3 gap-6">
           <!-- Details -->
@@ -732,12 +739,7 @@
             </div>
           </section>
         </article>
-      </div>
-      <!-- CTA(s) -->
-      <div class="w-full flex flex-col-reverse sm:flex-row sm:justify-end">
-        <button class="sBtn sm:mr-3">Delete</button>
-        <button class="pBtn mb-3 sm:mb-0">Save Changes</button>
-      </div>
+      </section>
     </main>
   </body>
 </html>
