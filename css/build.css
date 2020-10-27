@@ -56,6 +56,18 @@
     @apply outline-none shadow-outline;
 }
 
+.tBtn {
+    @apply px-1 text-sm font-semibold rounded-full;
+}
+
+.tBtn:hover {
+    @apply underline;
+}
+
+.tBtn:focus {
+    @apply outline-none shadow-outline;
+}
+
 .vaultPrice {
     @apply ml-2 truncate w-20 text-right tracking-widest tabular-nums;
 }
