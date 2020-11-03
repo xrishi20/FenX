@@ -2,87 +2,87 @@
 @tailwind components;
 
 .label {
-    @apply text-sm font-medium text-gray-700 mb-1 w-full flex;
+  @apply text-sm font-medium text-gray-700 mb-1 w-full flex;
 }
 
 .input {
-    @apply w-full bg-gray-100 py-2 px-4 text-gray-800 font-medium rounded-lg border-2 border-gray-300;
+  @apply w-full bg-gray-100 py-2 px-4 text-gray-800 font-medium rounded-md border-2 border-gray-300;
 }
 
 .input:focus {
-    @apply outline-none shadow-outline;
+  @apply outline-none shadow-outline;
 }
 
 .radioInput {
-    @apply absolute top-0 left-0 w-full h-full appearance-none z-10 rounded-full cursor-pointer;
+  @apply absolute top-0 left-0 w-full h-full appearance-none z-10 rounded-full cursor-pointer;
 }
 
 .radioInput:focus {
-    @apply outline-none shadow-outline;
+  @apply outline-none shadow-outline;
 }
 
 .svgStyle {
-    @apply h-5 w-5 flex-shrink-0;
+  @apply h-5 w-5 flex-shrink-0;
 }
 
 .smolBtn {
-    @apply rounded-full bg-gray-300 p-2 flex;
+  @apply rounded-full bg-gray-300 p-2 flex;
 }
 
 .smolBtn:focus {
-    @apply outline-none shadow-outline;
+  @apply outline-none shadow-outline;
 }
 
 .avatar {
-    @apply h-10 w-10 object-cover border-2 border-gray-300 rounded-full flex-shrink-0;
+  @apply h-10 w-10 object-cover border-2 border-gray-300 rounded-full flex-shrink-0;
 }
 
 .pBtn {
-    @apply bg-gray-900 text-white py-3 px-5 rounded-lg;
+  @apply bg-gray-900 text-white py-3 px-5 rounded-md;
 }
 
 .pBtn:hover {
-    @apply bg-gray-800;
+  @apply bg-gray-800;
 }
 
 .pBtn:focus {
-    @apply outline-none shadow-outline;
+  @apply outline-none shadow-outline;
 }
 
 .sBtn {
-    @apply bg-gray-300 text-gray-900 py-3 px-5 rounded-lg;
+  @apply bg-gray-300 text-gray-900 py-3 px-5 rounded-md;
 }
 
 .sBtn:hover {
-    @apply bg-gray-400;
+  @apply bg-gray-400;
 }
 
 .sBtn:focus {
-    @apply outline-none shadow-outline;
+  @apply outline-none shadow-outline;
 }
 
 .tBtn {
-    @apply px-1 text-sm font-semibold rounded-full;
+  @apply px-1 text-sm font-semibold rounded-full;
 }
 
 .tBtn:hover {
-    @apply underline;
+  @apply underline;
 }
 
 .tBtn:focus {
-    @apply outline-none shadow-outline;
+  @apply outline-none shadow-outline;
 }
 
 .vaultPrice {
-    @apply ml-2 truncate w-20 text-right tracking-widest tabular-nums;
+  @apply ml-2 truncate w-20 text-right tracking-widest tabular-nums;
 }
 
 .svgBtn {
-    @apply p-px rounded-full;
+  @apply p-px rounded-full;
 }
 
 .svgBtn:focus {
-    @apply outline-none shadow-outline;
+  @apply outline-none shadow-outline;
 }
 
 @tailwind utilities;
