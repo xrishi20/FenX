@@ -38,7 +38,7 @@
 }
 
 .pBtn {
-  @apply bg-gray-900 text-white py-3 px-5 rounded-md;
+  @apply bg-gray-900 text-white font-medium py-3 px-5 rounded-md;
 }
 
 .pBtn:hover {
@@ -50,7 +50,7 @@
 }
 
 .sBtn {
-  @apply bg-gray-300 text-gray-900 py-3 px-5 rounded-md;
+  @apply bg-gray-300 text-gray-900 font-medium py-3 px-5 rounded-md;
 }
 
 .sBtn:hover {
@@ -62,7 +62,7 @@
 }
 
 .tBtn {
-  @apply px-1 text-sm font-semibold rounded-full;
+  @apply px-1 text-sm font-medium rounded-full;
 }
 
 .tBtn:hover {

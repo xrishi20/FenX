@@ -712,6 +712,7 @@ video {
   --text-opacity: 1;
   color: #fff;
   color: rgba(255, 255, 255, var(--text-opacity));
+  font-weight: 500;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   padding-left: 1.25rem;
@@ -738,6 +739,7 @@ video {
   --text-opacity: 1;
   color: #1a202c;
   color: rgba(26, 32, 44, var(--text-opacity));
+  font-weight: 500;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   padding-left: 1.25rem;
@@ -761,7 +763,7 @@ video {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
   font-size: 0.875rem;
-  font-weight: 600;
+  font-weight: 500;
   border-radius: 9999px;
 }
 
