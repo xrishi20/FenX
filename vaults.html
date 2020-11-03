@@ -3,15 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,400;1,500&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="theme-color" content="#1a202c" />
     <link rel="stylesheet" href="./css/tailwind.css" />
-    <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <title>Vaults</title>
   </head>
-  <body class="bg-gray-200 text-gray-900">
+  <body class="bg-gray-200 text-gray-900 font-medium">
     <header class="w-full bg-gray-900 shadow-lg mb-6">
       <div
         class="max-w-screen-xl w-full mx-auto px-6 flex justify-between items-center"
@@ -59,6 +56,45 @@
     </header>
 
     <main class="max-w-screen-xl w-full mx-auto px-6">
+      <!-- Notice -->
+      <div
+        class="w-full border-2 border-gray-400 rounded-lg py-2 px-3 bg-gray-300 mb-6 flex flex-row items-start"
+      >
+        <svg
+          class="svgStyle text-gray-600 mt-px"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+          ></path>
+        </svg>
+        <p class="flex-1 text-gray-700 font-medium px-2">
+          Click on the Vault card to view its dashboard where you can edit,
+          delete (owner), contribute & track progress of the vault.
+        </p>
+        <button class="svgBtn">
+          <svg
+            class="svgStyle text-gray-700"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+      </div>
       <!-- Top Content -->
       <div
         class="flex justify-between items-center mb-6 pb-4 border-b-2 border-gray-300"
@@ -84,7 +120,7 @@
         </div>
         <!-- CTA -->
         <button class="pBtn -mt-1 sm:-mt-2">
-          <span class="hidden sm:inline">Add Vault</span>
+          <span class="hidden sm:inline">New Vault</span>
           <svg
             class="svgStyle text-white sm:hidden -mx-2 sm:mx-0"
             fill="none"
@@ -107,72 +143,8 @@
       >
         <!-- Repeat Start -->
         <a
-          href="./vaultDetails.html"
-          class="block bg-gray-900 rounded-lg shadow-md overflow-hidden cursor-pointer focus:outline-none focus:shadow-outline transform hover:scale-105 transition-transform duration-300"
-        >
-          <div
-            class="image-box w-full relative bg-white"
-            style="padding-top: 56.25%"
-          >
-            <img
-              class="absolute top-0 left-0 w-full h-full object-center object-cover"
-              src="./images/cat.jpg"
-              alt="vault-item"
-            />
-            <!-- Check -->
-            <div class="absolute top-0 left-0">
-              <div
-                class="bg-green-200 h-12 w-12 shadow-md p-1"
-                style="
-                  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
-                  clip-path: polygon(0 0, 0% 100%, 100% 0);
-                "
-              >
-                <svg
-                  class="text-green-800"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5 13L9 17L19 7"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-            </div>
-            <!-- Heart -->
-            <div class="absolute top-0 right-0">
-              <div class="m-2 rounded-full bg-red-200 p-1 shadow-md">
-                <img
-                  src="./images/red-heart.svg"
-                  alt="heart"
-                  class="h-6 w-6 absolute top-0 left-0 m-3"
-                />
-                <img
-                  src="./images/red-heart.svg"
-                  alt="heart"
-                  class="h-6 w-6 animate-ping"
-                />
-              </div>
-            </div>
-          </div>
-          <div
-            class="flex justify-between py-2 px-4 text-white font-normal text-sm"
-          >
-            <p class="truncate">Devil's Cat</p>
-            <p class="vaultPrice">$300</p>
-          </div>
-        </a>
-        <!-- Repeat End -->
-        <!-- Repeat Start -->
-        <a
-          href="./vaultDetails.html"
+          title="View Dashboard"
+          href="./vaultDashboard.html"
           class="block bg-gray-900 rounded-lg shadow-md overflow-hidden cursor-pointer focus:outline-none focus:shadow-outline transform hover:scale-105 transition-transform duration-300"
         >
           <div
@@ -227,49 +199,50 @@
               </div>
             </div>
           </div>
-          <div
-            class="flex justify-between py-2 px-4 text-white font-normal text-sm"
-          >
-            <p class="truncate">Apple iPhone 12 Pro Max 5G</p>
-            <p class="vaultPrice">$3,000</p>
-          </div>
-        </a>
-        <!-- Repeat End -->
-        <!-- Repeat Start -->
-        <a
-          href="./vaultDetails.html"
-          class="block bg-gray-900 rounded-lg shadow-md overflow-hidden cursor-pointer focus:outline-none focus:shadow-outline transform hover:scale-105 transition-transform duration-300"
-        >
-          <div
-            class="image-box w-full relative bg-white"
-            style="padding-top: 56.25%"
-          >
-            <img
-              class="absolute top-0 left-0 w-full h-full object-center object-cover"
-              src="./images/tepes.jpg"
-              alt="vault-item"
-            />
-            <!-- Heart -->
-            <div class="absolute top-0 right-0">
-              <div class="m-2 rounded-full bg-red-200 p-1 shadow-md">
-                <img
-                  src="./images/red-heart.svg"
-                  alt="heart"
-                  class="h-6 w-6 absolute top-0 left-0 m-3"
-                />
-                <img
-                  src="./images/red-heart.svg"
-                  alt="heart"
-                  class="h-6 w-6 animate-ping"
-                />
-              </div>
+          <div class="flex flex-col py-2 px-4 text-white font-normal text-sm">
+            <h6 class="truncate w-full mb-px font-medium">
+              Apple iPhone 12 Pro Max 5G Plus XL
+            </h6>
+            <div
+              class="w-full grid grid-cols-2 gap-1 text-gray-400 tracking-wider"
+            >
+              <p class="w-full mb-1 truncate flex items-center">
+                <svg
+                  class="w-4 h-4 flex-shrink-0 mr-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"
+                  ></path>
+                </svg>
+                <span>200</span>
+                <span class="px-px">/</span>
+                <span>4,000</span>
+              </p>
+              <p class="w-full mb-1 truncate flex items-center">
+                <svg
+                  class="w-4 h-4 flex-shrink-0 mr-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+                <span class="flex-1 truncate">10% done</span>
+              </p>
             </div>
-          </div>
-          <div
-            class="flex justify-between py-2 px-4 text-white font-normal text-sm"
-          >
-            <p class="truncate">Tepes's Cat</p>
-            <p class="vaultPrice">$2,000</p>
           </div>
         </a>
         <!-- Repeat End -->

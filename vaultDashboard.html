@@ -4,15 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#1a202c" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,400;1,500&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./css/tailwind.css" />
-    <title>Vault Details</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <title>Vault's Dashboard</title>
   </head>
-  <body class="bg-gray-200 text-gray-900">
+  <body class="bg-gray-200 text-gray-900 font-medium">
     <header class="w-full bg-gray-900 shadow-md mb-6">
       <div
         class="max-w-screen-xl w-full mx-auto px-6 flex justify-between items-center"
@@ -64,7 +60,7 @@
       <article class="flex justify-between items-baseline mb-6 pb-4 border-b-2 border-gray-300">
         <div class="flex items-center">
           <a
-            href="./vault.html"
+            href="./vaults.html"
             class="flex p-1 md:p-2 mr-4 rounded-full border-2 hover:bg-gray-300 border-gray-400 focus:outline-none focus:shadow-outline"
           >
             <svg
@@ -193,50 +189,23 @@
                 <!-- Input Box-->
                 <label
                   for="name"
-                  class="text-xs md:text-sm text-gray-700 mb-1 flex"
+                  class="label"
                   >Name</label
                 >
-                <div class="w-full relative mb-3">
                   <input
-                    class="input"
+                    class="input mb-3"
                     type="text"
                     name="name"
                     id="name"
                     placeholder="Car, House etc"
                     autocomplete="off"
                   />
-                  <div
-                    class="w-12 h-full absolute top-0 right-0 flex justify-center items-center rounded-lg"
-                  >
-                    <button
-                      class="p-2 focus:outline-none focus:shadow-outline rounded-lg"
-                    >
-                      <svg
-                        class="svgStyle text-gray-700"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M4 3.99999V8.99999H4.582M4.582 8.99999C5.24585 7.35812 6.43568 5.9829 7.96503 5.08985C9.49438 4.1968 11.2768 3.8364 13.033 4.06513C14.7891 4.29386 16.4198 5.09878 17.6694 6.35377C18.919 7.60875 19.7168 9.24285 19.938 11M4.582 8.99999H9M20 20V15H19.419M19.419 15C18.7542 16.6409 17.564 18.015 16.0348 18.9073C14.5056 19.7995 12.7237 20.1595 10.9681 19.9309C9.21246 19.7022 7.5822 18.8979 6.33253 17.6437C5.08287 16.3896 4.28435 14.7564 4.062 13M19.419 15H15"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
                 <!-- Input Box-->
                 <label
                   for="Amount"
-                  class="text-xs md:text-sm text-gray-700 mb-1 flex"
+                  class="label"
                   >Amount</label
                 >
-                <div class="relative w-full">
                   <input
                     class="input"
                     type="text"
@@ -245,31 +214,6 @@
                     placeholder="3000"
                     autocomplete="off"
                   />
-                  <div
-                    class="w-12 h-full absolute top-0 right-0 flex justify-center items-center rounded-lg"
-                  >
-                    <button
-                      class="p-2 focus:outline-none focus:shadow-outline rounded-lg"
-                    >
-                      <svg
-                        class="svgStyle text-gray-700"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M4 3.99999V8.99999H4.582M4.582 8.99999C5.24585 7.35812 6.43568 5.9829 7.96503 5.08985C9.49438 4.1968 11.2768 3.8364 13.033 4.06513C14.7891 4.29386 16.4198 5.09878 17.6694 6.35377C18.919 7.60875 19.7168 9.24285 19.938 11M4.582 8.99999H9M20 20V15H19.419M19.419 15C18.7542 16.6409 17.564 18.015 16.0348 18.9073C14.5056 19.7995 12.7237 20.1595 10.9681 19.9309C9.21246 19.7022 7.5822 18.8979 6.33253 17.6437C5.08287 16.3896 4.28435 14.7564 4.062 13M19.419 15H15"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
               </div>
             </div>
           </section>

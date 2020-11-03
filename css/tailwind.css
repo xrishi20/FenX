@@ -614,6 +614,17 @@ video {
   }
 }
 
+.label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  --text-opacity: 1;
+  color: #4a5568;
+  color: rgba(74, 85, 104, var(--text-opacity));
+  margin-bottom: 0.25rem;
+  width: 100%;
+  display: flex;
+}
+
 .input {
   width: 100%;
   --bg-opacity: 1;
@@ -773,6 +784,17 @@ video {
   text-align: right;
   letter-spacing: 0.1em;
   --font-variant-numeric-spacing: tabular-nums;
+}
+
+.svgBtn {
+  padding: 1px;
+  border-radius: 9999px;
+}
+
+.svgBtn:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
 }
 
 .space-y-0 > :not(template) ~ :not(template) {

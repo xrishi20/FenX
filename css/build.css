@@ -1,5 +1,10 @@
 @tailwind base;
 @tailwind components;
+
+.label {
+    @apply text-sm font-medium text-gray-700 mb-1 w-full flex;
+}
+
 .input {
     @apply w-full bg-gray-100 py-2 px-4 text-gray-800 font-medium rounded-lg border-2 border-gray-300;
 }
@@ -70,6 +75,14 @@
 
 .vaultPrice {
     @apply ml-2 truncate w-20 text-right tracking-widest tabular-nums;
+}
+
+.svgBtn {
+    @apply p-px rounded-full;
+}
+
+.svgBtn:focus {
+    @apply outline-none shadow-outline;
 }
 
 @tailwind utilities;
