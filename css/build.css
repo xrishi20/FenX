@@ -50,11 +50,11 @@
 }
 
 .sBtn {
-  @apply bg-gray-300 text-gray-900 font-medium py-3 px-5 rounded-md;
+  @apply bg-gray-400 text-gray-900 font-medium py-3 px-5 rounded-md;
 }
 
 .sBtn:hover {
-  @apply bg-gray-400;
+  @apply bg-gray-300;
 }
 
 .sBtn:focus {
@@ -62,7 +62,7 @@
 }
 
 .tBtn {
-  @apply px-1 text-sm font-medium rounded-full;
+  @apply px-1 text-sm font-semibold rounded-full;
 }
 
 .tBtn:hover {
@@ -83,6 +83,10 @@
 
 .svgBtn:focus {
   @apply outline-none shadow-outline;
+}
+
+.inputSelectContainer {
+  @apply w-32 h-full bg-gray-300 border-t-2 border-r-2 border-b-2 border-gray-300 absolute top-0 right-0 rounded-r-md;
 }
 
 @tailwind utilities;
