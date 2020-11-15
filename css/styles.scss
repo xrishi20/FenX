@@ -44,14 +44,14 @@ body {
 }
 
 //Radio
-#myRadio:hover #radioDot {
+.myRadio:hover .radioDot {
   opacity: 0.25 !important;
 }
 
-.radioInput ~ #radioDot {
+.radioInput ~ .radioDot {
   opacity: 0 !important;
 }
 
-.radioInput:checked ~ #radioDot {
+.radioInput:checked ~ .radioDot {
   opacity: 1 !important;
 }
