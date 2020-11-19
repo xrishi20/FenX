@@ -615,7 +615,7 @@ video {
 }
 
 .label {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: 500;
   --text-opacity: 1;
   color: #4a5568;
@@ -763,7 +763,7 @@ video {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
   font-size: 0.875rem;
-  font-weight: 600;
+  font-weight: 500;
   border-radius: 9999px;
 }
 

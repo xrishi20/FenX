@@ -57,7 +57,7 @@
 
     <main class="max-w-screen-xl w-full mx-auto px-6 mb-6 flex flex-col sm:grid grid-cols-2 sm:items-center">
       <!-- Header -->
-      <article class="flex justify-between items-baseline mb-6 pb-4 border-b-2 border-gray-300">
+      <article class="flex justify-between items-baseline mb-6 sm:-mb-1 pb-4 border-b-2 border-gray-300 sm:border-none">
         <div class="flex items-center">
           <a
             href="./vaults.html"
@@ -80,18 +80,18 @@
               />
             </svg>
           </a>
-          <h1 class="text-gray-800 font-bold text-2xl md:text-3xl">
+          <h1 class="text-gray-800 font-bold text-2xl md:text-3xl -mb-1">
             Vault's Dashboard
           </h1>
         </div>
       </article>
       <!-- CTA(s) -->
-      <div class="w-full flex flex-col-reverse sm:flex-row sm:justify-end sm:mb-6 sm:pb-3 sm:-mt-2 md:mt-0 sm:border-b-2 border-gray-300 order-3 sm:order-none">
+      <div class="w-full flex flex-col-reverse sm:flex-row sm:justify-end sm:pb-4 sm:-mt-3 md:mt-1 order-3 sm:order-none">
         <button class="sBtn sm:mr-3">Delete</button>
         <button class="pBtn mb-3 sm:mb-0">Save Changes</button>
       </div>
       <!-- Content -->
-      <section class="sm:col-span-2 w-full grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
+      <section class="sm:col-span-2 w-full grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6 sm:pt-6 sm:border-t-2 border-gray-300">
         <!-- 2/3 Stuff -->
         <article class="lg:col-span-2 grid grid-cols-1 md:grid-cols-3 gap-6">
           <!-- Details -->
@@ -208,7 +208,7 @@
                 >
                   <input
                     class="input"
-                    type="text"
+                    type="number"
                     name="Amount"
                     id="Amount"
                     placeholder="3000"
@@ -288,7 +288,7 @@
 
               <div class="relative w-full mb-4">
                 <input
-                  type="text"
+                  type="number"
                   class="input pr-32"
                   name=""
                   id=""
@@ -355,7 +355,6 @@
                     <input
                       id="withdraw"
                       name="contribute"
-                      id=""
                       type="radio"
                       class="radioInput"
                     />
@@ -447,10 +446,9 @@
               <!-- Per week thing -->
               <div class="relative w-full">
                 <input
-                  type="text"
+                  type="number"
                   class="input pr-32"
                   name=""
-                  id=""
                   placeholder="3000"
                 />
                 <div
@@ -544,16 +542,15 @@
               </button>
             </div>
 
-            <a
-              href="#"
+            <div
               class="flex focus:outline-none focus:shadow-outline rounded-full"
             >
               <img class="avatar -mr-4" src="./images/cat.jpg" alt="" />
               <img class="avatar -mr-4" src="./images/tepes.jpg" alt="" />
               <img class="avatar -mr-4" src="./images/cat.jpg" alt="" />
               <img class="avatar -mr-4" src="./images/tepes.jpg" alt="" />
-              <p class="pl-6 pt-3 text-gray-700">and 4 others</p>
-            </a>
+              <a href="#" class="tBtn pl-6 mt-4">and 24 others</a></p>
+            </div>
           </section>
           <!-- Transactions -->
           <section
@@ -588,7 +585,7 @@
                 </div>
               </div>
               <!-- Content -->
-              <div class="w-full flex flex-col relative px-6 mb-3 divide-y">
+              <div class="w-full flex flex-col relative px-6 mb-3 divide-y divide-gray-200">
                 <!-- Repeatable Start -->
                 <div class="flex justify-between py-2 border-b">
                   <!-- Image + Name -->
@@ -600,7 +597,7 @@
                       >
                         Captain America
                       </h3>
-                      <p class="text-xs text-gray-700 uppercase">
+                      <p class="text-xs text-gray-700">
                         August 12, 2020
                       </p>
                     </flex>
@@ -624,7 +621,7 @@
                       >
                         Iron Man
                       </h3>
-                      <p class="text-xs text-gray-700 uppercase">
+                      <p class="text-xs text-gray-700">
                         August 10, 2020
                       </p>
                     </flex>
@@ -648,7 +645,7 @@
                       >
                         Thanos
                       </h3>
-                      <p class="text-xs text-gray-700 uppercase">
+                      <p class="text-xs text-gray-700">
                         August 02, 2020
                       </p>
                     </flex>
@@ -665,7 +662,7 @@
             </div>
             <!-- View All -->
             <div
-              class="w-full bg-gray-100 border-t flex items-center justify-end px-4 py-3"
+              class="w-full bg-gray-100 border-t border-gray-200 flex items-center justify-end px-4 py-3"
             >
               <a
                 href="#"
