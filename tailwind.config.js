@@ -4,6 +4,7 @@ module.exports = {
     purgeLayersByDefault: true,
   },
   purge: {
+    enabled: true,
     content: [
       "./deleteModal.html",
       "./discardModal.html",
